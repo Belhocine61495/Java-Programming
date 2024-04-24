@@ -1,1 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the first string:");
+        String firstString = scanner.nextLine();
+
+        System.out.println("Enter the second string:");
+        String secondString = scanner.nextLine();
+
+        String concatenatedString1 = firstString.concat(secondString);
+        String concatenatedString2 = secondString.concat(firstString);
+
+        boolean areAlternating = concatenatedString1.equals(concatenatedString2);
+
+        if (areAlternating) {
+            System.out.println("The concatenated strings are alternating.");
+        } else {
+            System.out.println("The concatenated strings are not alternating.");
+        }
+
+        scanner.close();
+    }
+}
 
