@@ -27,7 +27,6 @@ public class Main {
 
         rectangle.getData();
 
-        // Call displayArea method to display area of the rectangle
         rectangle.displayArea();
     }
 }
